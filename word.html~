@@ -17,7 +17,7 @@
    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
   <!-- Brand -->
     <a class="navbar-brand">
-    <img src=" C:\xampp\htdocs\PROJECT\download.jpg" alt="Logo" style="width:40px"></a>
+    <img src="C:\xampp\htdocs\PROJECT\img\RVCE_logo.jpg" alt="Logo" style="width:40px"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
    <span class="navbar-toggler-icon"></span>
  </button>
@@ -31,14 +31,14 @@
           File
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Save <img src="C:\xampp\htdocs\PROJECT\img\file\save.png" width=20px></a>
-            <a class="dropdown-item" href="#">Save As <img src="C:\xampp\htdocs\PROJECT\img\file\save_as.png" width=20px></a>
-            <a class="dropdown-item" href="#">Open <img src="C:\xampp\htdocs\PROJECT\img\file\open.png" width=20px></a>
-            <a class="dropdown-item" href="#">Close <img src="C:\xampp\htdocs\PROJECT\img\file\close.png" width=20px></a>
-            <a class="dropdown-item" href="#">New <img src="C:\xampp\htdocs\PROJECT\img\file\new.png" width=20px></a>
-            <a class="dropdown-item" href="#">Preview <img src="C:\xampp\htdocs\PROJECT\img\file\preview.jpg" width=20px></a>
-              <a class="dropdown-item" href="#">Submit <img src="C:\xampp\htdocs\PROJECT\img\file\submit.png" width=30px</a>
-            <a class="dropdown-item" href="#">Exit <img src="C:\xampp\htdocs\PROJECT\img\file\exit.png" width=20px></a>
+            <a class="dropdown-item" href="#" img src="C:\xampp\htdocs\PROJECT\img\file\save.png" alt="Save"></a>
+            <a class="dropdown-item" href="#">Save As</a>
+            <a class="dropdown-item" href="#">Open</a>
+            <a class="dropdown-item" href="#">Close</a>
+            <a class="dropdown-item" href="#">New</a>
+            <a class="dropdown-item" href="#">Preview</a>
+            <a class="dropdown-item" href="#">Submit</a>
+            <a class="dropdown-item" href="#">Exit</a>
           </div>
         </li>
         <li class="nav-item dropdown">
