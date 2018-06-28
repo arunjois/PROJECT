@@ -1,4 +1,8 @@
 #insertdrop
 {
-font-size=10
+font-size:10pt;
+}
+
+#filedrop{
+  font-size: 10pt
 }
