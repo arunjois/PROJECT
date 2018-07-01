@@ -6,3 +6,15 @@
   width: 500px;
   background-color: inherit;
 }
+#insertdrop
+{
+font-size:10pt;
+}
+
+#filedrop{
+  font-size: 10pt
+}
+#submit{
+  bottom: 10px;
+  position: absolute;
+}
