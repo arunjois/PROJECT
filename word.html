@@ -2,17 +2,19 @@
 <html ng-app>
 <head>
   <title>Demo Of Word File</title>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet"type="text/css" href="./css/word.css" >
+  <link rel="stylesheet" type="text/css" href="./css/word.css" >
+  <script src="./js/word.js"></script>
+  <script src='./angular.js'></script>
 </head>
 
 
-<body>
+<body ng-app="word">
 
    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
   <!-- Brand -->
@@ -116,7 +118,7 @@
         <a class="dropdown-item" href="#">Link 3</a>
       </div>
     </li>
-    
+
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
       View
@@ -157,12 +159,27 @@
         <a class="dropdown-item" href="#">Link 3</a>
       </div>
     </li>
-    <button type="button" class="btn btn-success" id="submit-btn">Submit</button>
-
+    <button type="button" class="btn btn-success" id="submit-btn" ng-click="submit()" value="Submit">Submit</button>
 </ul>
 </nav>
-<div class="" id="editor_body">
-<iframe src="editor.html"  height="600" width="900"></iframe>
+<div id="editor_body" ng-app="word" ng-controller="x">
+<iframe src="editor.html"  height="600" width="900" ng-model='latex_code'></iframe>
 </div>
 </body>
+<script>
+var app = angular.module('word', ['editor']);
+app.controller('x', function($scope) {
+   $scope.submit= function(){
+    /*  var data = $.param({
+        var tmp=$scope.latex_code;
+      })
+      //}); */
+      
+      //$http.post("/api/book/", data).success(function(data, status) {
+      //  console.log('Data posted successfully');
+    //  })
+  }
+});
+
+</script>
 </html>
