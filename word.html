@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html ng-app='word'>
-=======
 <html ng-app="word">
->>>>>>> 9389a1575fa004d3cdd19c90ae78ae7c60a5f1c9
 <head>
   <title>Demo Of Word File</title>
   <meta charset="UTF-8">
@@ -15,16 +11,9 @@
   <script src="./js/jquery-linedtextarea.js"></script>
   <link href="./css/jquery-linedtextarea.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="./css/word.css" >
-<<<<<<< HEAD
-  <script src='./angular.js'></script>
-</head>
-
-
-=======
   <script src="./js/word.js"></script>
   <script src='./js/angular.js'></script>
 </head>
->>>>>>> 9389a1575fa004d3cdd19c90ae78ae7c60a5f1c9
 <body>
 
   <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
@@ -148,46 +137,17 @@
                         <a class="dropdown-item" href="#">Link 3</a>
                       </div>
                     </li>
-<<<<<<< HEAD
-                    <button type="button" class="btn btn-success" id="submit-btn" ng-click="submit()">Submit</button>
-=======
                     <button type="button" class="btn btn-success" id="submit-btn" ng-click="submit()" ng-controller="code">Submit</button>
->>>>>>> 9389a1575fa004d3cdd19c90ae78ae7c60a5f1c9
                   </ul>
 
 
 
                 </nav>
                 <div id="editor_body" ng-controller="code">
-<<<<<<< HEAD
-                  <textarea class="lined" rows="50" cols="100" ng-model='latex'>
-=======
                   <textarea class="lined" rows="50" cols="100" ng-model="latex">
->>>>>>> 9389a1575fa004d3cdd19c90ae78ae7c60a5f1c9
                   </textarea>
                 </div>
-                <script>
-                var app=angular.module('word',[]);
-                  app.controller('code',function($scope) {
-                    $scope.submit=function(){
-                      $scope.latex="Something";
-                      console.log("Hello");
-                      //$http.post("/api/book/", data).success(function(data, status) {
-                      //  console.log('Data posted successfully');
-                      //  })
-                    }
-                  });
-                $(function() {
-                  $(".lined").linedtextarea(
-                    {selectedLine: 1}
-                  );
-                });
-                </script>
-
               </body>
-<<<<<<< HEAD
-
-=======
               <script>
               var app=angular.module('word',[]);
               app.controller('code',function($scope){
@@ -205,5 +165,4 @@
                 );
               });
               </script>
->>>>>>> 9389a1575fa004d3cdd19c90ae78ae7c60a5f1c9
               </html>
