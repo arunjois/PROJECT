@@ -162,19 +162,15 @@
     <button type="button" class="btn btn-success" id="submit-btn" ng-click="submit()" value="Submit">Submit</button>
 </ul>
 </nav>
-<div id="editor_body" ng-app="word" ng-controller="x">
-<iframe src="editor.html"  height="600" width="900" ng-model='latex_code'></iframe>
+<div id="editor_body" ng-controller="temp">
+<iframe src="editor.html"  height="600" width="900"  ng-model='latex_code'></iframe>
 </div>
 </body>
 <script>
 var app = angular.module('word', ['editor']);
-app.controller('x', function($scope) {
+app.controller("temp", ["latex_code"],function($scope) {
    $scope.submit= function(){
-    /*  var data = $.param({
-        var tmp=$scope.latex_code;
-      })
-      //}); */
-      
+     console.log($scope.latex);
       //$http.post("/api/book/", data).success(function(data, status) {
       //  console.log('Data posted successfully');
     //  })
