@@ -1,5 +1,9 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html ng-app='word'>
+=======
+<html ng-app="word">
+>>>>>>> 9389a1575fa004d3cdd19c90ae78ae7c60a5f1c9
 <head>
   <title>Demo Of Word File</title>
   <meta charset="UTF-8">
@@ -9,12 +13,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <script src="./js/jquery-linedtextarea.js"></script>
-	<link href="./css/jquery-linedtextarea.css" type="text/css" rel="stylesheet" />
+  <link href="./css/jquery-linedtextarea.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="./css/word.css" >
+<<<<<<< HEAD
   <script src='./angular.js'></script>
 </head>
 
 
+=======
+  <script src="./js/word.js"></script>
+  <script src='./js/angular.js'></script>
+</head>
+>>>>>>> 9389a1575fa004d3cdd19c90ae78ae7c60a5f1c9
 <body>
 
   <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
@@ -68,13 +78,19 @@
 
                 <ul class ="nav nav-tabs nav-justified ">
                   <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\cover_page.png"  srcset='./img/insert/cover_page.png' width=40px/></br>Cover</br>Page</a>
+                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\cover_page_template.jpg"  srcset='./img/insert/cover_page_template.jpg' width=40px/></br>Cover</br>Page</a>
                   </li>
                   <li class="nav-item">
                     <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\blank_page.png" srcset='./img/insert/blank_page.png' srcset width=30px/></br>Blank</br>Page</a>
                   </li>
                   <li class="nav-item">
                     <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\page_break.png" srcset='./img/insert/page_break.png' srcset width=40px/></br>Page</br>Break</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\add_section.png" srcset='./img/insert/add_section.png' width=50px/></br>Section</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\subsection.png" srcset='./img/insert/subsection.png' width=40px/></br>Sub</br>Section</a>
                   </li>
                   <li class="nav-item">
                     <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\table.png" srcset='./img/insert/table.png' width=35px/></br>Table</a>
@@ -92,11 +108,14 @@
                     <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\footer.png" srcset='./img/insert/footer.png' width=50px/></br>Footer</a>
                   </li>
                   <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\page_number.png" srcset='./img/insert/page_number.png' width=40px/></br>Pager</br>Number</a>
+                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\math_mode.png" srcset='./img/insert/math_mode.png' width=35px/></br>Math</br>Mode</a>
                   </li>
                   <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\word_art.jpg" srcset='./img/insert/word_art.jpg' width=40px/></br>Wordvr</br> Art</a>
+                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\greek_letters.png" srcset='./img/insert/greek_letters.png' width=40px/></br>Greek</br>Symbols</a>
                     <li>
+                      <li class="nav-item">
+                        <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\relational_symbols.png" srcset='./img/insert/relational_symbols.png' width=35px/></br>Relational</br>Symbols</a>
+                      </li>
                     </ul></nav></div></li>
 
                     <li class="nav-item dropdown">
@@ -121,26 +140,6 @@
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Latex Controls
-                      </a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                      </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Latex Commands
-                      </a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                      </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                         Special Features
                       </a>
                       <div class="dropdown-menu">
@@ -149,11 +148,22 @@
                         <a class="dropdown-item" href="#">Link 3</a>
                       </div>
                     </li>
+<<<<<<< HEAD
                     <button type="button" class="btn btn-success" id="submit-btn" ng-click="submit()">Submit</button>
+=======
+                    <button type="button" class="btn btn-success" id="submit-btn" ng-click="submit()" ng-controller="code">Submit</button>
+>>>>>>> 9389a1575fa004d3cdd19c90ae78ae7c60a5f1c9
                   </ul>
+
+
+
                 </nav>
                 <div id="editor_body" ng-controller="code">
+<<<<<<< HEAD
                   <textarea class="lined" rows="50" cols="100" ng-model='latex'>
+=======
+                  <textarea class="lined" rows="50" cols="100" ng-model="latex">
+>>>>>>> 9389a1575fa004d3cdd19c90ae78ae7c60a5f1c9
                   </textarea>
                 </div>
                 <script>
@@ -175,5 +185,25 @@
                 </script>
 
               </body>
+<<<<<<< HEAD
 
+=======
+              <script>
+              var app=angular.module('word',[]);
+              app.controller('code',function($scope){
+                $scope.submit= function(){
+                  console.log("Hello World");
+                  //$http.post("/api/book/", data).success(function(data, status) {
+                  //  console.log('Data posted successfully');
+                  //  })
+                };
+              });
+
+              $(function() {
+                $(".lined").linedtextarea(
+                  {selectedLine: 1}
+                );
+              });
+              </script>
+>>>>>>> 9389a1575fa004d3cdd19c90ae78ae7c60a5f1c9
               </html>
