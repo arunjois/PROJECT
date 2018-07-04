@@ -148,101 +148,23 @@
                         <a class="dropdown-item" href="#">Link 3</a>
                       </div>
                     </li>
-                    <li class="nav-item">
-                      <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\word_art.jpg" srcset='./img/insert/word_art.jpg' width=40px/></br>Wordvr</br> Art</a>
-                      <li>
-                      </ul></nav></div></li>
+                    <button type="button" class="btn btn-success" id="submit-btn" ng-click="submit()" value="Submit">Submit</button>
+                  </ul>
+                </nav>
+                <div id="editor_body" ng-controller="temp">
+                  <iframe src="editor.html"  height="600" width="900"  ng-model='latex_code'></iframe>
+                </div>
+              </body>
+              <script>
+              var app = angular.module('word', ['editor']);
+              app.controller("temp", ["latex_code"],function($scope) {
+                $scope.submit= function(){
+                  console.log($scope.latex);
+                  //$http.post("/api/book/", data).success(function(data, status) {
+                  //  console.log('Data posted successfully');
+                  //  })
+                }
+              });
 
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                          Page Layout
-                        </a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Table</a>
-                          <a class="dropdown-item" href="#">Pictures</a>
-                          <a class="dropdown-item" href="#">Diagrams</a>
-                        </div>
-                      </li>
-
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                          Page Layout
-                        </a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Table</a>
-                          <a class="dropdown-item" href="#">Pictures</a>
-                          <a class="dropdown-item" href="#">Diagrams</a>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                          References
-                        </a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#"></a>
-                          <a class="dropdown-item" href="#">Link 2</a>
-                          <a class="dropdown-item" href="#">Link 3</a>
-                        </div>
-                      </li>
-
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                          View
-                        </a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#"></a>
-                          <a class="dropdown-item" href="#">Link 2</a>
-                          <a class="dropdown-item" href="#">Link 3</a>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                          Latex Controls
-                        </a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#"></a>
-                          <a class="dropdown-item" href="#">Link 2</a>
-                          <a class="dropdown-item" href="#">Link 3</a>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                          Latex Commands
-                        </a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#"></a>
-                          <a class="dropdown-item" href="#">Link 2</a>
-                          <a class="dropdown-item" href="#">Link 3</a>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                          Special Features
-                        </a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#"></a>
-                          <a class="dropdown-item" href="#">Link 2</a>
-                          <a class="dropdown-item" href="#">Link 3</a>
-                        </div>
-                      </li>
-                      <button type="button" class="btn btn-success" id="submit-btn" ng-click="submit()" value="Submit">Submit</button>
-                    </ul>
-                  </nav>
-                  <div id="editor_body" ng-controller="temp">
-                    <iframe src="editor.html"  height="600" width="900"  ng-model='latex_code'></iframe>
-                  </div>
-                </body>
-                <script>
-                var app = angular.module('word', ['editor']);
-                app.controller("temp", ["latex_code"],function($scope) {
-                  $scope.submit= function(){
-                    console.log($scope.latex);
-                    //$http.post("/api/book/", data).success(function(data, status) {
-                    //  console.log('Data posted successfully');
-                    //  })
-                  }
-                });
-
-
-                </script>
-                </html>
+              </script>
+              </html>
