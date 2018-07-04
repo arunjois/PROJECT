@@ -8,9 +8,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="./js/jquery-linedtextarea.js"></script>
+	<link href="./css/jquery-linedtextarea.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="./css/word.css" >
   <script src="./js/word.js"></script>
   <script src='./angular.js'></script>
+  <script>
+  console.log("Hello World")
+  </script>
 </head>
 
 
@@ -148,23 +153,31 @@
                         <a class="dropdown-item" href="#">Link 3</a>
                       </div>
                     </li>
-                    <button type="button" class="btn btn-success" id="submit-btn" ng-click="submit()" value="Submit">Submit</button>
+                    <button type="button" class="btn btn-success" id="submit-btn" ng-click="temp.submit()" value="Submit">Submit</button>
                   </ul>
                 </nav>
-                <div id="editor_body" ng-controller="temp">
-                  <iframe src="editor.html"  height="600" width="900"  ng-model='latex_code'></iframe>
+                <div id="editor_body" ng-controller="t as temp">
+                  <div ng-controller="code">
+                  <textarea class="lined" rows="50" cols="100" ng-model='latex'>
+                  </textarea>
+                  </div>
                 </div>
               </body>
               <script>
               var app = angular.module('word', ['editor']);
-              app.controller("temp", ["latex_code"],function($scope) {
+              app.controller("temp",function($scope) {
                 $scope.submit= function(){
-                  console.log($scope.latex);
+                  console.log("Hello World")
                   //$http.post("/api/book/", data).success(function(data, status) {
                   //  console.log('Data posted successfully');
                   //  })
                 }
               });
-
+              $(function() {
+              	$(".lined").linedtextarea(
+              		{selectedLine: 1}
+              	);
+              });
+              </script>
               </script>
               </html>
