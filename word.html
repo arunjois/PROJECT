@@ -137,14 +137,14 @@
                         <a class="dropdown-item" href="#">Link 3</a>
                       </div>
                     </li>
-                    <button type="button" class="btn btn-success" id="submit-btn" ng-click="submit()" ng-controller="code">Submit</button>
+                    <button type="button" class="btn btn-success" id="submit-btn" ng-click="submit()" ng-controller="code" ng-model="latex">Submit</button>
                   </ul>
 
 
 
                 </nav>
                 <div id="editor_body" ng-controller="code">
-                  <textarea class="lined" rows="50" cols="100" ng-model="latex">
+                  <textarea class="lined" rows="50" cols="100" id="latex_code" ng-model="latex">
                   </textarea>
                 </div>
               </body>
@@ -152,7 +152,8 @@
               var app=angular.module('word',[]);
               app.controller('code',function($scope){
                 $scope.submit= function(){
-                  console.log("Hello World");
+                  var text=document.getElementById('latex_code').value;
+                  console.log(text.trim());
                   //$http.post("/api/book/", data).success(function(data, status) {
                   //  console.log('Data posted successfully');
                   //  })
