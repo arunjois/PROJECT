@@ -160,11 +160,12 @@
                 var app=angular.module('word',[]);
                   app.controller('code',function($scope) {
                     $scope.submit=function(){
+                      $scope.latex="Something";
                       console.log("Hello");
                       //$http.post("/api/book/", data).success(function(data, status) {
                       //  console.log('Data posted successfully');
                       //  })
-                    };
+                    }
                   });
                 $(function() {
                   $(".lined").linedtextarea(
