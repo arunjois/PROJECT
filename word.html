@@ -173,15 +173,15 @@
     <button type="button" class="btn btn-success" id="submit-btn" ng-click="submit()" value="Submit">Submit</button>
 </ul>
 </nav>
-<div id="editor_body" ng-controller="temp">
+<div id="editor_body" ng-model="x">
 <iframe src="editor.html"  height="600" width="900"  ng-model='latex_code'></iframe>
 </div>
 </body>
 <script>
-var app = angular.module('word', ['editor']);
-app.controller("temp", ["latex_code"],function($scope) {
+var application = angular.module('word', ['editor']);
+application.controller("x", ["latex_code"],function($scope) {
    $scope.submit= function(){
-     console.log($scope.latex);
+     console.log($scope.x);
       //$http.post("/api/book/", data).success(function(data, status) {
       //  console.log('Data posted successfully');
     //  })
