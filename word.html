@@ -1,166 +1,166 @@
 <!DOCTYPE html>
 <html ng-app="word">
-<head>
-  <title>Demo Of Word File</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <script src="./js/jquery-linedtextarea.js"></script>
-  <link href="./css/jquery-linedtextarea.css" type="text/css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="./css/word.css" >
-  <script src="./js/word.js"></script>
-  <script src='./js/angular.js'></script>
-</head>
-<body>
+	<head>
+		<title>Demo Of Word File</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<script src="./js/jquery-linedtextarea.js"></script>
+		<link href="./css/jquery-linedtextarea.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="./css/word.css" >
+		<script src="./js/word.js"></script>
+		<script src='./js/angular.js'></script>
+	</head>
+	<body>
 
-  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
-    <!-- Brand -->
-    <a class="navbar-brand">
-      <img src="C:\xampp\htdocs\PROJECT\img\RVCE_logo.jpg" srcset='./img/RVCE_logo.jpg' alt="Logo" style="width:40px"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+		<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+			<!-- Brand -->
+			<a class="navbar-brand">
+				<img src="C:\xampp\htdocs\PROJECT\img\RVCE_logo.jpg" srcset='./img/RVCE_logo.jpg' alt="Logo" style="width:40px"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-      <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <!-- Dropdown -->
-        <ul class ="nav nav-tabs">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              File
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" id="filedrop" href="#">Save <img src="C:\xampp\htdocs\PROJECT\img\file\save.png" srcset='./img/file/save.png' width=20px></a>
-              <a class="dropdown-item"  id="filedrop" href="#">Save As <img src="C:\xampp\htdocs\PROJECT\img\file\save_as.png" srcset='./img/file/save_as.png' width=25px></a>
-              <a class="dropdown-item"  id="filedrop" href="#">Open <img src="C:\xampp\htdocs\PROJECT\img\file\open.png" srcset='./img/file/open.png' width=20px></a>
-              <a class="dropdown-item"  id="filedrop" href="#">Close <img src="C:\xampp\htdocs\PROJECT\img\file\close.png" srcset='./img/file/close.png' width=20px></a>
-              <a class="dropdown-item"  id="filedrop"  href="#">New <img src="C:\xampp\htdocs\PROJECT\img\file\new.png" srcset='./img/file/new.png' width=20px></a>
-              <a class="dropdown-item"  id="filedrop" href="#">Preview <img src="C:\xampp\htdocs\PROJECT\img\file\preview.jpg" srcset='./img/file/preview.jpg' width=20px></a>
-              <a class="dropdown-item"  id="filedrop" href="#">Submit <img src="C:\xampp\htdocs\PROJECT\img\file\submit.png" srcset='./img/file/submit.png' width=20px</a>
-              <a class="dropdown-item"  id="filedrop" href="#">Exit <img src="C:\xampp\htdocs\PROJECT\img\file\exit.png" srcset='./img/file/exit.png' width=20px></a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Home
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-            </div>
-          </li>
+			<!-- Navbar links -->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<!-- Dropdown -->
+				<ul class ="nav nav-tabs">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							File
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" id="filedrop" href="#">Save <img src="C:\xampp\htdocs\PROJECT\img\file\save.png" srcset='./img/file/save.png' width=20px></a>
+							<a class="dropdown-item"  id="filedrop" href="#">Save As <img src="C:\xampp\htdocs\PROJECT\img\file\save_as.png" srcset='./img/file/save_as.png' width=25px></a>
+							<a class="dropdown-item"  id="filedrop" href="#">Open <img src="C:\xampp\htdocs\PROJECT\img\file\open.png" srcset='./img/file/open.png' width=20px></a>
+							<a class="dropdown-item"  id="filedrop" href="#">Close <img src="C:\xampp\htdocs\PROJECT\img\file\close.png" srcset='./img/file/close.png' width=20px></a>
+							<a class="dropdown-item"  id="filedrop"  href="#">New <img src="C:\xampp\htdocs\PROJECT\img\file\new.png" srcset='./img/file/new.png' width=20px></a>
+							<a class="dropdown-item"  id="filedrop" href="#">Preview <img src="C:\xampp\htdocs\PROJECT\img\file\preview.jpg" srcset='./img/file/preview.jpg' width=20px></a>
+							<a class="dropdown-item"  id="filedrop" href="#">Submit <img src="C:\xampp\htdocs\PROJECT\img\file\submit.png" srcset='./img/file/submit.png' width=20px</a>
+							<a class="dropdown-item"  id="filedrop" href="#">Exit <img src="C:\xampp\htdocs\PROJECT\img\file\exit.png" srcset='./img/file/exit.png' width=20px></a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							Home
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#"></a>
+							<a class="dropdown-item" href="#"></a>
+							<a class="dropdown-item" href="#"></a>
+							<a class="dropdown-item" href="#"></a>
+						</div>
+					</li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Insert
-            </a>
-            <div class="nav-item dropdown-menu">
-              <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
-              <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                  <span class="navbar-toggler-icon"></span>
-                </button>-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							Insert
+						</a>
+						<div class="nav-item dropdown-menu">
+							<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+								<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+			</button>-->
 
-                <ul class ="nav nav-tabs nav-justified ">
-                  <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\cover_page_template.jpg"  srcset='./img/insert/cover_page_template.jpg' width=40px/></br>Cover</br>Page</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\blank_page.png" srcset='./img/insert/blank_page.png' srcset width=30px/></br>Blank</br>Page</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\page_break.png" srcset='./img/insert/page_break.png' srcset width=40px/></br>Page</br>Break</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\add_section.png" srcset='./img/insert/add_section.png' width=50px/></br>Section</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\subsection.png" srcset='./img/insert/subsection.png' width=40px/></br>Sub</br>Section</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\table.png" srcset='./img/insert/table.png' width=35px/></br>Table</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\picture.png" srcset='./img/insert/picture.png' width=40px/></br>Picture</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\clip_art.png" srcset='./img/insert/clip_art.png' width=40px/></br>Clip</br>Art</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\header.png" srcset='./img/insert/header.png' width=35px/></br>Header</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\footer.png" srcset='./img/insert/footer.png' width=50px/></br>Footer</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\math_mode.png" srcset='./img/insert/math_mode.png' width=35px/></br>Math</br>Mode</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\greek_letters.png" srcset='./img/insert/greek_letters.png' width=40px/></br>Greek</br>Symbols</a>
-                    <li>
-                      <li class="nav-item">
-                        <a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\relational_symbols.png" srcset='./img/insert/relational_symbols.png' width=35px/></br>Relational</br>Symbols</a>
-                      </li>
-                    </ul></nav></div></li>
+			<ul class ="nav nav-tabs nav-justified ">
+				<li class="nav-item">
+					<a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\cover_page_template.jpg"  srcset='./img/insert/cover_page_template.jpg' width=40px/></br>Cover</br>Page</a>
+				</li>
+				<li class="nav-item">
+					<a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\blank_page.png" srcset='./img/insert/blank_page.png' srcset width=30px/></br>Blank</br>Page</a>
+				</li>
+				<li class="nav-item">
+					<a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\page_break.png" srcset='./img/insert/page_break.png' srcset width=40px/></br>Page</br>Break</a>
+				</li>
+				<li class="nav-item">
+					<a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\add_section.png" srcset='./img/insert/add_section.png' width=50px/></br>Section</a>
+				</li>
+				<li class="nav-item">
+					<a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\subsection.png" srcset='./img/insert/subsection.png' width=40px/></br>Sub</br>Section</a>
+				</li>
+				<li class="nav-item">
+					<a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\table.png" srcset='./img/insert/table.png' width=35px/></br>Table</a>
+				</li>
+				<li class="nav-item">
+					<a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\picture.png" srcset='./img/insert/picture.png' width=40px/></br>Picture</a>
+				</li>
+				<li class="nav-item">
+					<a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\clip_art.png" srcset='./img/insert/clip_art.png' width=40px/></br>Clip</br>Art</a>
+				</li>
+				<li class="nav-item">
+					<a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\header.png" srcset='./img/insert/header.png' width=35px/></br>Header</a>
+				</li>
+				<li class="nav-item">
+					<a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\footer.png" srcset='./img/insert/footer.png' width=50px/></br>Footer</a>
+				</li>
+				<li class="nav-item">
+					<a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\math_mode.png" srcset='./img/insert/math_mode.png' width=35px/></br>Math</br>Mode</a>
+				</li>
+				<li class="nav-item">
+					<a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\greek_letters.png" srcset='./img/insert/greek_letters.png' width=40px/></br>Greek</br>Symbols</a>
+					<li>
+						<li class="nav-item">
+							<a class="dropdown-item" href="#" id="insertdrop"><img src="C:\xampp\htdocs\PROJECT\img\insert\relational_symbols.png" srcset='./img/insert/relational_symbols.png' width=35px/></br>Relational</br>Symbols</a>
+						</li>
+			</ul></nav></div></li>
 
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Page Layout
-                      </a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Table</a>
-                        <a class="dropdown-item" href="#">Pictures</a>
-                        <a class="dropdown-item" href="#">Diagrams</a>
-                      </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        View
-                      </a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                      </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        Special Features
-                      </a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                      </div>
-                    </li>
-                  </ul>
-                  <button type="button" class="btn btn-success" id="submit-btn" ng-click="submit()" ng-controller="code">Submit</button>
-                </nav>
-                <div id="editor_body" ng-controller="code">
-                  <textarea class="lined" rows="50" cols="100" id="latex_code" ng-model="latex">
-                  </textarea>
-                </div>
-              </body>
-              <script>
-              var app=angular.module('word',[]);
-              app.controller('code',function($scope){
-                $scope.submit= function(){
-                  var text=document.getElementById('latex_code').value;
-                  console.log(text.trim());
-                  //$http.post("/api/book/", data).success(function(data, status) {
-                  //  console.log('Data posted successfully');
-                  //  })
-                };
-              });
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Page Layout
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Table</a>
+					<a class="dropdown-item" href="#">Pictures</a>
+					<a class="dropdown-item" href="#">Diagrams</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					View
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#"></a>
+					<a class="dropdown-item" href="#">Link 2</a>
+					<a class="dropdown-item" href="#">Link 3</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Special Features
+				</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#"></a>
+					<a class="dropdown-item" href="#">Link 2</a>
+					<a class="dropdown-item" href="#">Link 3</a>
+				</div>
+			</li>
+				</ul>
+				<button type="button" class="btn btn-success" id="submit-btn" ng-click="submit()" ng-controller="code">Submit</button>
+		</nav>
+		<div id="editor_body" ng-controller="code">
+			<textarea class="lined" rows="50" cols="100" id="latex_code" ng-model="latex">
+			</textarea>
+		</div>
+	</body>
+	<script>
+		var app=angular.module('word',[]);
+app.controller('code',function($scope){
+	$scope.submit= function(){
+		var text=document.getElementById('latex_code').value;
+		console.log(text.trim());
+		//$http.post("/api/book/", data).success(function(data, status) {
+		//  console.log('Data posted successfully');
+		//  })
+	};
+});
 
-              $(function() {
-                $(".lined").linedtextarea(
-                  {selectedLine: 1}
-                );
-              });
-              </script>
-              </html>
+$(function() {
+	$(".lined").linedtextarea(
+		{selectedLine: 1}
+	);
+});
+	</script>
+</html>
