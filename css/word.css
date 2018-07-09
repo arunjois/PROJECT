@@ -20,3 +20,15 @@ font-size:10pt;
   align:right;
   float:right;
 }
+
+#coverbody{
+  font-weight: bold;
+  align-content: center;
+}
+#team_info{
+  align-items:center;
+  align:center;
+}
+#coverpage_btn{
+  align-self:right;
+}
