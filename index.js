@@ -20,10 +20,14 @@ app.get('/word',function(req,res){
 	res.render('word',{title:'working'});
 });
 
+app.get('/coverpage',function(req,res){
+	res.render('coverpage',{});
+});
+
 app.get("/",function(req,res){
-  res.writeHead(200,{'Content-Type':'text/html'});
-  res.write("Hello World");
-  res.end();
+	res.writeHead(200,{'Content-Type':'text/html'});
+	res.write("Hello World");
+	res.end();
 });
 app.listen(8080,function() {
 	console.log("Lisiting at 8080");
