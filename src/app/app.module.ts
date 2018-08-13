@@ -7,7 +7,7 @@ import {
   MatGridListModule,
   MatMenuModule
 } from '@angular/material';
-
+import {MatTreeModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { GridComponent } from './grid/grid.component';
@@ -32,7 +32,8 @@ import { ButtonsComponent } from './grid/contoller/buttons/buttons.component';
     BrowserAnimationsModule,
     MatGridListModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
