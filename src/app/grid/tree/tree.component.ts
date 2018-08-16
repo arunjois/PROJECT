@@ -40,7 +40,7 @@ const TREE_DATA = JSON.stringify({
                     "3":"1st Year",
                 },
                 "itemize":{
-                    "1":"MCA";
+                    "1":"MCA",
                     "2":"1st Sem",
                     "3":"1st Year",
                     "4":"end Of item",
