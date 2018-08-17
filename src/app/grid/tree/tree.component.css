@@ -1,6 +1,6 @@
-mat-tree{
-    position: relative;
-    left:-150px;  /*I know that this is not good.*/
-    width:100%;
-    height: 100%;
+mat-tree-node{
+    background-color: silver;
+    
+    width:300px;
+    height: inherit;
 }
