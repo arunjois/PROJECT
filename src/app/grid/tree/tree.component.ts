@@ -22,14 +22,38 @@ export class FileFlatNode {
 /**
  * The file structure tree data in string. The data could be parsed into a Json object
  */
-const TREE_DATA = JSON.stringify({
-  "name":"Arun",
-  "name1":"Arun",
-  "name2":"Arun",
-  "name3":"Arun",
-  "name4":"Arun",
-  "name5":"Arun",
-});
+const TREE_DATA = JSON.stringify(
+  {
+    "name":"MVC Self Study",
+    "version":"0.1",
+    /*
+     * The Cover page template goes here.
+     */
+    "article":{
+        "section":{
+            "name":"INTRODUCTION",
+            "subsection":"MEAN Stack",
+            "body":{
+                "text":"The MEAN stack has been very ",
+                "bold":"popular",
+                "newpara":"This is just to show and example",
+                "enumerate"{
+                    "1":"MCA",
+                    "2":"2nd Sec",
+                    "3":"1st Year",
+                },
+                "itemize":{
+                    "1":"MCA",
+                    "2":"1st Sem",
+                    "3":"1st Year",
+                    "4":"end Of item",
+                }
+
+            }
+        }
+    }
+}
+);
 
 /**
  * File database, it can build a tree structured Json object from string.

@@ -1,6 +1,6 @@
 mat-tree-node{
-    background-color: silver;
-    
-    width:300px;
+    align-content: flex-start;
+    background-color:yellow;
+    width:auto;    
     height: inherit;
 }
