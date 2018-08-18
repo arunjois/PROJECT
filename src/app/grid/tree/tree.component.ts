@@ -37,7 +37,7 @@ const TREE_DATA = JSON.stringify(
                 "text":"The MEAN stack has been very ",
                 "bold":"popular",
                 "newpara":"This is just to show and example",
-                "enumerate"{
+                "enumerate":{
                     "1":"MCA",
                     "2":"2nd Sec",
                     "3":"1st Year",
