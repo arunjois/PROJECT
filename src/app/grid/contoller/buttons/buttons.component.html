@@ -1,6 +1,10 @@
 <div id="text_ctrl" >
-    <button  id="text" mat-raised-button color="primary">Text Mode</button>
-    <button  id="text" mat-raised-button color="primary">Math Mode</button>
-    <button  id="text" mat-raised-button color="primary">Add Section</button>
-    <button  id="text" mat-raised-button color="primary">Add NewPage</button>
+    <button  id="text" mat-raised-button color="primary" (click)="addSection()" >Add Section</button>
+    <button  id="text" mat-raised-button color="primary" (click)="addSubSection()" >Add Subsection</button>
+    <button  id="text" mat-raised-button color="primary" (click)="addList()" >Add List</button>
+    <button  id="text" mat-raised-button color="primary" (click)="addTable()" >Add Table</button>
+    <button  id="text" mat-raised-button color="primary" (click)="addImage()" >Add Image</button>
+    <button  id="text" mat-raised-button color="primary" (click)="addFraction()" >Add Fraction</button>
+    <br />
+    <button id="text"  mat-raised-button color="primary" (click)="addBullets()">Add Bullets</button>
 </div> 
