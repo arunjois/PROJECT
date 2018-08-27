@@ -16,7 +16,10 @@ export class FileNode {
 /** Flat node with expandable and level information */
 export class FileFlatNode {
   constructor(
-    public expandable: boolean, public filename: string, public level: number, public type: any) {}
+    public expandable: boolean, 
+    public filename: string, 
+    public level: number, 
+    public type: any) {}
 }
 
 /*
@@ -82,7 +85,7 @@ export class FileDatabase {
     const dataObject = JSON.parse(TREE_DATA);
 
     // Build the tree nodes from Json object. The result is a list of `FileNode` with nested
-    //     file node as children.
+    // file node as children.
     const data = this.buildFileTree(dataObject, 0);
 
     // Notify the change.

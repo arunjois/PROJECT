@@ -14,6 +14,7 @@
 
 export interface Chapter{
     Heading: String;
+    children: any;
 }
 
 export interface Subsection {
@@ -23,12 +24,14 @@ export interface Subsection {
     Italic: String;
     Bold: String;
     Math: String;
+    children : any;
 }
 
 
 export interface Enumerate {
     Index: Number;
     Text: Number;
+    children:any;
 }
 
 export interface Table {
@@ -60,6 +63,8 @@ export class JTex {
     }
     appendData(){
         
+    }
+    constructor(S:Chapter) {
     }
 
 }

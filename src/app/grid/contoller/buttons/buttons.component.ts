@@ -43,6 +43,13 @@ export class ButtonsComponent implements OnInit {
     console.log("Add Bullets");
   }
 
+  saveAll(){
+    console.log("Save");
+  }
+
+  revertAll(){
+    console.log("Revert");
+  }
   constructor() { }
 
   ngOnInit() {
