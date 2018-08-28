@@ -14,6 +14,14 @@ parseData(jtex:JTex) {
 }
 
 
+/* 
+ * Get JTex Object
+ */
+getJTex() {
+  return ;
+}
+
+
  
   constructor() { }
 }
