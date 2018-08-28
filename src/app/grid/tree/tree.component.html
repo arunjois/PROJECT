@@ -2,7 +2,7 @@
   <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle matTreeNodePadding>
     <button mat-icon-button disabled></button>
     <!--{{node.filename}} : {{node.type}}-->
-    <label>{{node.filename}}</label>
+    <label>{{node.filename|uppercase}}</label>
     <textarea value={{node.type}}></textarea>
   </mat-tree-node>
 
@@ -13,7 +13,7 @@
       </mat-icon>
     </button>
     <!--{{node.filename}} : {{node.type}}-->
-    <label>{{node.filename}}</label>
+    <label>{{node.filename|uppercase}}</label>
     <textarea value={{node.filename}}></textarea>   <!--I got this-->
   </mat-tree-node>
 </mat-tree>
