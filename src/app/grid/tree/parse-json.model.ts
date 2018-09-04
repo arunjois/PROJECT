@@ -54,7 +54,12 @@ export interface Fraction {
 
 
 //JTex 
-export class JTex {
+export class JTex{
+    /*chp :Chapter;
+    chp:{
+        Heading:"Basic";
+        childen:null;
+    }*/
     addData(){
 
     }
