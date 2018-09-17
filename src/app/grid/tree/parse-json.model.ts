@@ -32,8 +32,8 @@ export class LinkedList {
         }
     }
     deleteItem(key:string) {
-        temp:Link;
-        del:Link;
+        //temp:Link;
+        //del:Link;
         
     }
     findItem(x:string) {
