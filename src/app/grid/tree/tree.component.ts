@@ -16,42 +16,50 @@ export class FileNode {
 /** Flat node with expandable and level information */
 export class FileFlatNode {
   constructor(
-    public expandable: boolean, public filename: string, public level: number, public type: any) {}
+    public expandable: boolean, 
+    public filename: string, 
+    public level: number, 
+    public type: any) {}
 }
+
+/*
+ * The JSON object will be requested from the server. 
+ * After JSON object is recieved we need to parse JSON Object
+ * to get melements for the DOM. Such as textbox, images, Math mode,etc.
+ * 
+ * 
+*/
+
+
+
 
 /**
  * The file structure tree data in string. The data could be parsed into a Json object
  */
 const TREE_DATA = JSON.stringify(
-  {
-    "name":"MVC Self Study",
-    "version":"0.1",
-    /*
-     * The Cover page template goes here.
-     */
-    "article":{
-        "section":{
-            "name":"INTRODUCTION",
-            "subsection":"MEAN Stack",
-            "body":{
-                "text":"The MEAN stack has been very ",
-                "bold":"popular",
-                "newpara":"This is just to show and example",
-                "enumerate"{
-                    "1":"MCA",
-                    "2":"2nd Sec",
-                    "3":"1st Year",
-                },
-                "itemize":{
-                    "1":"MCA",
-                    "2":"1st Sem",
-                    "3":"1st Year",
-                    "4":"end Of item",
-                }
-
-            }
-        }
-    }
+{
+	"name":"Sample Latex",
+	"version":"0.0.1",
+	"chapter 1":{
+		"name":"Basic",
+		"section":{
+			"name":"Section Type",
+			"subsection 1.1":{
+				"heading":"Section Type",
+				"text 1":"The Basic Section in a book are chapter,section, subsection and so on. These section will appear in the ",
+				"underline":"table of contents",
+				"text 2":"of the book",
+			},
+			"subsection 1.2":{
+				"heading":"Example Subsection",
+				"text":"This is just one exaple for a subsection.",
+			},
+			"subsection 1.3":{
+				"heading":"Basic Page Setting",
+				"text":"In order to show how the basic page setting are set up, we will use a long dummy text with the package ",
+			}
+		}
+	}
 }
 );
 
@@ -77,11 +85,12 @@ export class FileDatabase {
     const dataObject = JSON.parse(TREE_DATA);
 
     // Build the tree nodes from Json object. The result is a list of `FileNode` with nested
-    //     file node as children.
+    // file node as children.
     const data = this.buildFileTree(dataObject, 0);
 
     // Notify the change.
     this.dataChange.next(data);
+    console.log(data);
   }
 
   /**

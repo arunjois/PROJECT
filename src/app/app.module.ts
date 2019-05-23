@@ -8,7 +8,7 @@ import {
   MatMenuModule
 } from '@angular/material';
 import {MatTreeModule} from '@angular/material';
-import {MatIconModule} from '@angular/material/icon';
+import {MatIconModule} from '@angular/material/';
 
 import { AppComponent } from './app.component';
 import { GridComponent } from './grid/grid.component';
